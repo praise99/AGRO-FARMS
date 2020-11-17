@@ -161,7 +161,7 @@ nav {
   .nav-links {
     position: fixed;
     background: #333333;
-    height: 50vh;
+    height: 70vh;
     width: 100%;
     flex-direction: column;
     clip-path: circle(100px at 90% -50%);
@@ -170,8 +170,8 @@ nav {
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -50%);
-    -webkit-clip-path: circle(1000px at 90% -50%);
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
   .nav-links li {
@@ -224,7 +224,7 @@ nav {
 .B-title {
   font-weight: 500;
   font-size: 2.4rem;
-  line-height: 36px;
+  line-height: 3.6rem;
   color: #333333;
 }
 .B-desc {

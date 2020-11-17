@@ -9,7 +9,8 @@
     flex-direction: column;
   }
   header {
-    height: 80vh;
+    height: auto;
+    padding-bottom: 9rem;
   }
   .img-C {
     padding-right: 0rem;
@@ -89,7 +90,8 @@
     top: 4%;
   }
   header {
-    height: 80vh;
+    height: auto;
+    padding-bottom: 12rem;
   }
   .cont-foot {
     flex-direction: column;
@@ -166,6 +168,9 @@
   .C-cont {
     flex-direction: column;
   }
+  .menu {
+    padding-top: 3rem;
+  }
   /* .cont-foot {
     flex-direction: column;
   } */
@@ -232,7 +237,8 @@
     height: auto;
   }
   header {
-    height: 80vh;
+    height: auto;
+    padding-bottom: 15rem;
   }
   nav {
     margin-top: -11rem;
@@ -251,7 +257,8 @@
     font-size: 4rem;
   }
   header {
-    height: 80vh;
+    height: auto;
+    padding-bottom: 12rem;
   }
   nav {
     margin-top: -11rem;

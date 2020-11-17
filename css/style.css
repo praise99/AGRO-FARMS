@@ -88,16 +88,14 @@ body {
   color: white;
 }
 .create-btn {
-  background-color: #2ec1ac;
-  border: 2px solid #2ec1ac;
   width: 14rem;
   padding: 0.7rem;
 }
-.create-btn {
-  margin-top: 1rem;
+.too {
   background-color: #2ec1ac;
   border: 2px solid #2ec1ac;
 }
+
 .btn {
   width: 34.4rem;
   border-radius: 5px;
@@ -109,8 +107,8 @@ body {
   outline: none;
   cursor: pointer;
 }
-nav {
-  height: 10vh; /*background: #5b78c7;*/
+/* nav {
+  height: 10vh; background: #5b78c7;
   margin-top: -5.5rem;
 }
 
@@ -192,6 +190,139 @@ nav {
   }
   li.fade {
     opacity: 1;
+  }
+} */
+.header {
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #2ec1ac;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .nav-icon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .nav-icon:before {
+  top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* 48em = 768px @ 16pt font */
+
+@media (min-width: 70rem) {
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  .header {
+    margin-top: -14rem;
+  }
+  .header li {
+    float: left;
+  }
+  .story {
+    padding: 15rem 3rem;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
   }
 }
 

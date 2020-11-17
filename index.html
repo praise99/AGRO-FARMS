@@ -12,8 +12,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-      <header>
-        <h3 class="title">Agro <span class="title-sub">Farms</span></h3>
+      <header class="header">
+        <a href="/" class="logo"><h3 class="title">Agro <span class="title-sub">Farms</span></h3></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+              <li ><a href="#home">Home</a></li>
+              <li ><a href="#">About Us</a></li>
+              <li ><a href="#process">Our Process</a></li>
+              <li ><a href="html/log-in.html">Login</a></li>
+              <li ><a class="create-btn" href="html/sign-up.html">Register</a></li>
+            </ul>
+        <!-- <h3 class="title">Agro <span class="title-sub">Farms</span></h3>
         <nav>
             
           <div class="hamburger">
@@ -29,13 +39,15 @@
             <li ><a href="html/log-in.html">Login</a></li>
             <li ><a class="create-btn" href="html/sign-up.html">Register</a></li>
           </ul>
-        </nav>
+        </nav> -->
         <section class="story" id="home">
-            <h2 class="desc">Scale you agribusiness with loans
-              anywhere & everywhere</h2>
-              <button class="btn create-btn btn--white btn--animated">Get Started</button>
-        </section>
+          <h2 class="desc">Scale you agribusiness with loans
+            anywhere & everywhere</h2>
+            <button class="btn create-btn too btn--white btn--animated">Get Started</button>
+      </section>
+        
       </header>
+      
       <div class="sectB" id="process">
         <div class="content">
           <div class="mid">
@@ -145,7 +157,7 @@
             <p class="two-title">Subscribe to our newsletter</p>
             <div class="foot-input">
               <input type="text" placeholder="Your Email" class="three">
-              <button class=" create-btn sup-btn">Sign Up</button>
+              <button class=" create-btn too sup-btn">Sign Up</button>
 
             </div>
             <p class="two-sub">Be up to date with everything concerning AgroFarms</p>

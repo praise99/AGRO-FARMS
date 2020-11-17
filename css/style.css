@@ -138,7 +138,7 @@ nav {
   .line {
     width: 30px;
     height: 3px;
-    background: white;
+    background: yellow;
     margin: 5px;
   }
   .title {
@@ -161,7 +161,7 @@ nav {
   .nav-links {
     position: fixed;
     background: #333333;
-    height: 70vh;
+    height: 75vh;
     width: 100%;
     flex-direction: column;
     clip-path: circle(100px at 90% -50%);

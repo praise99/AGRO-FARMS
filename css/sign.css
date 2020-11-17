@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 10px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+.btn--white {
+  color: #777;
+  background-color: #2ec1ac;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn--white::after {
+  background-color: #2ec1ac;
+}
+.btn--animated {
+  animation-fill-mode: backwards;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+}
+.content {
+  display: flex;
+}
+
+.sign-form {
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sign2-img {
+  width: 26%;
+  background-color: #3e978b;
+  height: 100vh;
+}
+.sign-title {
+  font-weight: 700;
+  color: #2ec1ac;
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+}
+.sign-desc {
+  color: #d2e603;
+  font-weight: 400;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+label {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #333333;
+}
+.form {
+  padding-top: 0.5rem;
+}
+.sign-input {
+  margin-top: 0.8rem;
+  width: 57.4rem;
+  border: 2px solid #243d80;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #979797;
+}
+.policy {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.2rem;
+}
+.policy-desc {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #000000;
+  padding-left: 2rem;
+  padding-right: 10.9rem;
+  margin-top: -0.4rem;
+}
+.sup {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -3rem;
+}
+.policy-login {
+  margin-left: -1rem;
+}
+.blue {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.create-btn {
+  margin-top: 1rem;
+  background-color: #2ec1ac;
+  border: 2px solid #2ec1ac;
+}
+.btn {
+  width: 54.4rem;
+  border-radius: 5px;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0.9rem;
+  outline: none;
+  cursor: pointer;
+}
+.sign-or {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  color: #000000;
+}
+.google-btn {
+  background-color: #039c53;
+  border: 2px solid #039c53;
+  margin-bottom: 0.9rem;
+}
+.option-sign {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  color: #0000005f;
+}
+.yellow {
+  color: black;
+  text-decoration: none;
+}
+.pword {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sign2-img {
+  background-color: #3e978b;
+}
+.sign-img {
+  height: 28px;
+  width: 28px;
+  margin-left: -3.2rem;
+  cursor: pointer;
+  padding-top: 0.9rem;
+}
+.policy-log {
+  width: 500px;
+  padding-top: -0.9eem;
+}
+
+.policy-d {
+  float: right;
+  cursor: pointer;
+}
+
+.sec {
+  display: flex;
+}
+.img-err,
+.img-err2,
+.img-err3 {
+  margin-left: -4rem;
+  margin-top: 2.5rem;
+  display: none;
+}
+.error,
+.error2,
+.error3 {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.6rem;
+  color: hsl(0, 100%, 74%);
+  display: none;
+}
+
+.error-b {
+  display: flex;
+}
+.img-b {
+  display: block;
+}
+.img2-b {
+  display: block;
+}
+.error2-b {
+  display: flex;
+}
+.img3-b {
+  display: block;
+}
+.error3-b {
+  display: flex;
+}
+.none {
+  display: none;
+}

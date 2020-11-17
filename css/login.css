@@ -1,0 +1,62 @@
+@media (max-width: 480.98px) {
+  .policy-log {
+    width: 200px;
+  }
+  html {
+    font-size: 4px;
+  }
+  .sign-form {
+    width: 80%;
+  }
+  .sign2-img {
+    width: 20%;
+  }
+  .sign-img {
+    height: 28px;
+    width: 20px;
+    margin-left: -5.2rem;
+    cursor: pointer;
+    padding-top: 0.9rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .policy-log {
+    width: 300px;
+  }
+  html {
+    font-size: 6px;
+  }
+  .sign-form {
+    width: 80%;
+  }
+  .sign2-img {
+    width: 20%;
+  }
+  .sign-img {
+    height: 28px;
+    width: 20px;
+    margin-left: -4rem;
+    cursor: pointer;
+    padding-top: 0.9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  html {
+    font-size: 9px;
+  }
+  .sign-form {
+    width: 80%;
+  }
+  .sign2-img {
+    width: 20%;
+  }
+  .sign-img {
+    height: 28px;
+    width: 20px;
+    margin-left: -4rem;
+    cursor: pointer;
+    padding-top: 0.9rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+}

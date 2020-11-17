@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>AGRO FARMS || Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="../css/sign.css">
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content content-log">
+                <div class="sign-form">
+                    <h3 class="sign-title">Log in</h3>
+                    <p class="sign-desc">Welcome back!</p>
+                    <div class="form">
+                        <label for="EMAIL">Email</label><br>
+                        <div class="sec">
+                            <input type="text" class="sign-input sign-input2" placeholder="name@example.com">
+                            <div class="img-err2">
+                                <img src="../images/icon-error.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="error2">Looks like this is not an email</div>
+                        
+                    </div>
+                    <div class="form">
+                        <label for="password">Password</label><br>
+                        <div class="pword">
+                            <input type="password" class="sign-input sign-input3" placeholder="at least 8 characters" id="myInput">
+                            <div class="img-err3">
+                                <img src="../images/icon-error.svg" alt="">
+                            </div>
+                            <img src="../images/icons8-eye-24.png" alt="" class="sign-img" onclick="myFunction()">
+                        </div>
+                        <div class="error3">Password must be at least 8 characters </div>
+                    </div>
+                   <div class="policy policy-log">
+                       <div class="sup">
+                        <input type="radio" name="policy" id="#sign-policy">
+                        <p class="policy-desc policy-login">Remember me</p>
+                       </div>
+                       <p class="policy-d">Forgot Password?</p>
+                   </div>
+                   <button class="btn create-btn btn--white btn--animated">Log in</button>
+                   
+                   <p class="option-sign">New to Agro Farms? <a href="./sign-up.html" class="yellow">Sign up for free</a></p>
+
+                </div>
+                <div class="sign2-img"></div>
+            </div>
+        </div>
+        <script src="../js/test.js" async defer></script>
+        <script src="../js/script.js" async defer></script>
+    </body>
+</html>

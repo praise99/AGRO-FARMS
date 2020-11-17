@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+.btn--animated {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+header {
+  background-image: linear-gradient(
+      rgba(60, 69, 69, 0.5),
+      rgba(69, 71, 71, 0.9)
+    ),
+    url(/images/CetB-bTDBtY.png);
+  mix-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.desc {
+  padding: 0 5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.title {
+  padding: 2rem;
+  font-size: 2rem;
+  color: #d2e603;
+}
+.title-sub {
+  color: white;
+}
+.story {
+  text-align: center;
+  margin-top: 14rem;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 9.6rem;
+  padding: 0 3rem;
+  color: white;
+}
+.create-btn {
+  background-color: #2ec1ac;
+  border: 2px solid #2ec1ac;
+  width: 14rem;
+  padding: 0.7rem;
+}
+.create-btn {
+  margin-top: 1rem;
+  background-color: #2ec1ac;
+  border: 2px solid #2ec1ac;
+}
+.btn {
+  width: 34.4rem;
+  border-radius: 5px;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0.9rem;
+  outline: none;
+  cursor: pointer;
+}
+nav {
+  height: 10vh; /*background: #5b78c7;*/
+  margin-top: -5.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links li a:hover {
+  color: #d2e603;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  nav {
+    position: relative;
+  }
+
+  .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    margin-top: -1.4rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #333333;
+    height: 40vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -50%);
+    -webkit-clip-path: circle(100px at 90% -50%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav-links.open {
+    clip-path: circle(1000px at 90% -50%);
+    -webkit-clip-path: circle(1000px at 90% -50%);
+    pointer-events: all;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-links li a {
+    font-size: 25px;
+    color: white;
+  }
+  .nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
+
+.sectB {
+  display: flex;
+  padding: 11rem;
+}
+.content {
+  width: 50%;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.cont {
+  width: 50%;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.mid {
+  display: flex;
+  padding: 3rem;
+}
+.top-sub {
+  padding-right: 3rem;
+}
+.B-title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 36px;
+  color: #333333;
+}
+.B-desc {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #333333;
+  opacity: 0.5;
+}
+.title-cont {
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 9rem;
+  text-align: right;
+  color: #333333;
+  padding-top: 12rem;
+}
+.sectC {
+  background-color: #2ec1ac;
+  padding: 11rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.C-cont {
+  display: flex;
+}
+.title-C {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 7rem;
+  color: #ffffff;
+}
+.desc-C {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.6rem;
+  color: #edf2f4;
+}
+.img-C {
+  padding-right: 7rem;
+  padding-top: 4rem;
+  cursor: pointer;
+}
+.img-C:hover {
+  opacity: 0.7;
+}
+.sectD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3e978b;
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+}
+.title-D {
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 7rem;
+  color: #ffffff;
+}
+.desc-D {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #edf2f4;
+}
+.box {
+  background-color: #333333;
+  margin-top: 4rem;
+  padding: 2rem;
+  width: 40rem;
+  padding-bottom: 4rem;
+  height: 20rem;
+}
+.desc-box {
+  color: white;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  margin-top: -0.9rem;
+}
+.left,
+.right {
+  font-size: 6rem;
+  padding-left: 3rem;
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+}
+.cont-foot {
+  display: flex;
+  justify-content: space-around;
+  background-color: #2b2d42;
+  height: 48vh;
+  color: white;
+}
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-foot {
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+}
+li {
+  list-style: none;
+}
+.two {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 0rem;
+}
+.two-title,
+.two-sub {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.two-sup {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+div li {
+  margin-top: 2rem;
+}
+.three {
+  padding: 0.8rem;
+  outline: none;
+}
+.sup-btn {
+  width: 9rem;
+  cursor: pointer;
+  outline: none;
+}
+.two-sub {
+  padding-top: 2rem;
+}

@@ -2,6 +2,9 @@
   .C-cont {
     flex-direction: column;
   }
+  .two-sup {
+    font-size: 2rem;
+  }
   .hamburger {
     top: 4%;
   }
@@ -85,6 +88,9 @@
 @media (min-width: 481px) and (max-width: 767.99px) {
   .C-cont {
     flex-direction: column;
+  }
+  .two-sup {
+    font-size: 2rem;
   }
   .hamburger {
     top: 4%;
@@ -170,6 +176,9 @@
   }
   .menu {
     padding-top: 3rem;
+  }
+  .two-sup {
+    font-size: 2rem;
   }
   /* .cont-foot {
     flex-direction: column;

@@ -36,6 +36,7 @@ document.querySelector(".btn").addEventListener("click",password)
 function password(){
     var non=document.querySelector(".sign-img")
     var img4=document.querySelector(".img-err3");
+    var inputtext5=document.querySelector(".sign-input3")
     var inputtext4=document.querySelector(".sign-input3").value;
     var text4=document.querySelector(".error3");
      var full=Number(inputtext4.length)
@@ -43,11 +44,13 @@ function password(){
         text4.classList.add("error3-b")
         img4.classList.add("img3-b")
         non.classList.add("none")
+        inputtext5.classList.add("sign-input4")
         return true;
     }else{
         text4.classList.remove("error3-b")
         img4.classList.remove("img3-b")
         non.classList.remove("none")
+        inputtext5.classList.remove("sign-input4")
         return false;
     }
 }

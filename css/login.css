@@ -3,7 +3,7 @@
     width: 200px;
   }
   html {
-    font-size: 4px;
+    font-size: 8.5px;
   }
   .sign-form {
     width: 80%;
@@ -18,13 +18,36 @@
     cursor: pointer;
     padding-top: 0.9rem;
   }
+  .btn {
+    width: 30rem;
+  }
+  .form {
+    width: 30rem;
+  }
+  #sign-policy {
+    margin-left: 4rem;
+  }
+  .option-sign {
+    font-size: 2rem;
+  }
+  .policy-desc {
+    padding-right: 6.9rem;
+  }
+  .sign-input3 {
+    width: 30rem;
+    margin-left: -1.5rem;
+  }
+  .sign-input4 {
+    width: 33rem;
+    margin-left: 0rem;
+  }
 }
 @media (min-width: 481px) and (max-width: 767.98px) {
   .policy-log {
     width: 300px;
   }
   html {
-    font-size: 6px;
+    font-size: 10px;
   }
   .sign-form {
     width: 80%;
@@ -38,6 +61,29 @@
     margin-left: -4rem;
     cursor: pointer;
     padding-top: 0.9rem;
+  }
+  .btn {
+    width: 39rem;
+  }
+  .form {
+    width: 39rem;
+  }
+  #sign-policy {
+    margin-left: 4rem;
+  }
+  .option-sign {
+    font-size: 2rem;
+  }
+  .policy-desc {
+    padding-right: 6.9rem;
+  }
+  .sign-input3 {
+    width: 39rem;
+    margin-left: -0.5rem;
+  }
+  .sign-input4 {
+    width: 42rem;
+    margin-left: 0rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023.98px) {
